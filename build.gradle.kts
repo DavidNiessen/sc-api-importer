@@ -28,11 +28,13 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-data-jpa")
     //implementation("org.springframework.boot:spring-boot-starter-data-jpa:${springVersion}")
     developmentOnly("org.springframework.boot:spring-boot-devtools:${springVersion}")
+    // TESTING
+    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.11.4")
     testImplementation("org.springframework.boot:spring-boot-starter-test:${springVersion}")
-    testImplementation("org.mockito.kotlin:mockito-kotlin:3.2.0")
-    testImplementation("org.junit.jupiter:junit-jupiter:5.11.4")
-
+    testImplementation("org.junit.jupiter:junit-jupiter-api:5.11.4")
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit5:2.1.0")
+    testImplementation("org.mockito.kotlin:mockito-kotlin:3.2.0")
+
     runtimeOnly("com.h2database:h2")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher:1.11.4")
 }
